@@ -103,3 +103,86 @@ li a.active, li a:hover{
 }
 
 
+/*nosotros*/
+
+.nos{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  width: 650px;
+  margin-top: 80px;
+  margin-right: 500px;
+  background-position: fixed;
+}
+.contenedor{
+  display: flex;
+  
+}
+
+.txt{
+  font-size: 13px;
+  
+  
+
+}
+
+.qs{
+  text-decoration: underline;
+}
+
+.sub{
+  text-align: center;
+}
+
+
+.list {
+  font-size: 16px;
+  text-decoration: underline;
+    
+}
+
+.sublist{
+  text-decoration: underline;
+}
+
+
+
+/*Tramites*/
+
+
+.btn{
+    display: inline-block;
+    margin-top: 7px;
+    padding: 5px 5px;
+    border: 2px solid rgb(92, 92, 92);
+    color: white;
+    text-decoration: none;
+    background: rgb(70, 70, 70);
+}
+
+.box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.box-container .box{
+  height: 11rem;
+  width: 17rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin: 2rem;
+  background: #3f3f3f;
+  
+}
+
+.box-container .box i {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  color: whitesmoke;
+}
