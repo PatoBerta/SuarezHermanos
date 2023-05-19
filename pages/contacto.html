@@ -8,6 +8,7 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> 
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   
@@ -29,10 +30,10 @@
               <a class="nav-link" href="tramites.html">Tramites</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="casilleros.html">Casilleros</a>
+              <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
+              <a class="nav-link" href="login.html">Login</a>
             </li>
               
             
@@ -45,40 +46,36 @@
  
         
  
-  <section> 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="section-header text-center pb-5">
-            <h2>Contactenos</h2>
-              <p class="texto-contacto">Valoramos su opinión sobre los servicios que utiliza y apreciamos sus sugerencias y recomendaciones. Suarez Hermanos le garantiza la confidencialidad de toda la información que usted ingrese.</p>
-          </div>
-          
-        </div>
-
-      </div>
-      <div class="row m-0">
-        <div class="col-md-12p-0 pt-4 m-auto">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="mb-3">
-                  <input type="text" class="form-control" required placeholder="Nombre">
-                </div>
+  <section class="block-style contact scroll-to-block" >
+    <h2 class="block-title"></h2>
+    <p class="sub-title">
+          Si tiene alguna duda, no dude en consultarnos. Nuestro equipo de profesionales le responderá en breve.
+      </p>
+      <div class="container contact-us">
+          <div class="row">
+              <div class="col-md-4 contact-info v-contact-info ">
+                <h5>Dirección</h5>
+                <p>Ituzaingó 383, CP 1642,</p>
+                <p>San Isidro, Argentina </p>
+                <h5>teléfono</h5>
+                <a class="phone" href="tel:01157880410">+54 5788 - 0410</a>
+                <h5>email</h5>
+                <p><a class="mail-us" href="mailto:suarezhermanos2@gmail.com">Suarezhermanos2@gmail.com</a></p>
               </div>
-              <div class="col-md-12">
-                <div class="mb-3">
-                  <input type="Mail" class="form-control" required placeholder="Ingrese su Email">
-            </div>
-        </div>
-        <div class="col-md-12">
-          <div class="mb-3">
-            <textarea rows="3" required class="form-control" placeholder="Mensaje"></textarea>
+              <div class="col-md-8">
+                  <form class="red-form" action="contacto.php" method="post">
+                      <input class="input-style"  type="text" name="name" required placeholder="Nombre">
+                      <input class="input-style" type="email" name="email" required placeholder="E-mail">
+                      <input class="input-style" type="text" name="subject" required placeholder="Asunto">
+                      <textarea  class="tx-style" name="message" required placeholder="Mensaje"></textarea>
+                      <input class="send" type="submit" value="Enviar"/>
+                      
+                      <div class="container-fluid">
+                  </form>
+              </div>
+          </div>
       </div>
-      
-      <button class="btn btn-warning btn-lg btn-block mt-3">Enviar</button>
-    </div>
   </section>
-
  
  
  

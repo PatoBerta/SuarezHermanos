@@ -1,0 +1,156 @@
+.carousel-inner{
+    height: 500px;
+  }
+  
+  .v-servise-block {
+    padding-bottom: 0;
+  }
+  
+  .tab-container {
+    border-bottom: 1px solid #eaedee;
+  }
+  
+  .nav-tab-serv {
+    border-bottom: none;
+    display: table;
+    margin: 0 auto;
+  }
+  
+  .nav-tab-item {
+    float: left;
+  }
+  
+  .nav-item-serv {
+    background: #fff;
+    border-radius: 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #8b989b;
+    letter-spacing: 2px;
+    margin-right: 0;
+    border: 1px solid #eaedee;
+    border-bottom: none;
+    display: inline-block;
+    padding: 19px 19px 17px;
+    cursor: pointer;
+    margin-left: -1px;
+    transition: color 0.2s linear, border-color 0.2s linear;
+  }
+  @media screen and (max-width: 1200px) {
+    .nav-item-serv {
+      font-size: 12px;
+    }
+  }
+  
+  .nav-item-serv.active, .nav-item-serv:hover {
+    background: #868686;
+    border-color: #949494;
+    color: #fff;
+    margin-bottom: -1px;
+  }
+  
+  .tab-nav-wrapper {
+    border-bottom: 1px solid #eaedee;
+    margin-bottom: 10px;
+  }
+  
+  .tab-serv-content {
+    min-height: 498px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+  
+  
+  
+  .tab-serv-text {
+    text-align: center;
+    padding: 80px  15px 0;
+  }
+  
+  .tab-serv-text h3 {
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 0px;
+    text-decoration: underline;
+  }
+  
+  .tab-serv-text p {
+    max-width: 80%;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.7;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  
+  .tab-info {
+    display: none;
+  }
+  
+  .tab-info.active {
+    display: block;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .tab-serv-text {
+      padding-top: 130px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .nav-item-serv {
+      padding: 12px 12px 10px;
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  
+    .tab-nav-wrapper {
+      margin-bottom: 20px;
+    }
+  
+    .tab-serv-content {
+      min-height: 440px;
+    }
+  
+    .tab-serv-text {
+      padding-top: 100px;
+    }
+  
+    .nav-tab-serv {
+      max-width: 500px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .tab-nav-wrapper {
+      margin-bottom: 40px;
+    }
+  
+    .tab-serv-content {
+      min-height: 350px;
+    }
+  
+    .tab-serv-text-content {
+      min-height: 100% !important;
+      height: auto !important;
+    }
+  
+    .tab-serv-img {
+      display: none;
+    }
+  
+    .tab-serv-text {
+      padding: 50px 15px;
+      
+    }
+  }
+  @media screen and (max-width: 481px) {
+    .tab-serv-text {
+      padding: 30px 15px;
+    }
+  }

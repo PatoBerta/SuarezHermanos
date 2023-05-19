@@ -1,0 +1,389 @@
+.container {
+  text-align: center;
+  justify-content: space-between;
+}
+
+.title-index {
+  font-size: 27px;
+}
+
+.card {
+  background-color: rgb(231, 231, 231);
+}
+
+.card-title {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.btn {
+  background-color: grey;
+}
+
+nav {
+  background: #171717;
+  height: 80px;
+  width: 100%;
+}
+
+.enlace {
+  position: absolute;
+  padding: 20px 50px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+li a.active, li a:hover {
+  background: rgb(165, 163, 163);
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.enlace {
+  color: white;
+  font-size: 23px;
+  display: inline-block;
+  position: absolute;
+}
+
+.nv {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.nv-txt {
+  font-size: 17px;
+}
+
+.nos {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  width: 650px;
+  margin-top: 80px;
+  margin-right: 500px;
+  background-position: fixed;
+}
+
+.contenedor {
+  display: flex;
+  text-align: center;
+}
+
+.txt {
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.qs {
+  text-decoration: underline;
+}
+
+.sub {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.list {
+  font-size: 19px;
+  text-decoration: underline;
+}
+
+.sublist {
+  text-decoration: underline;
+  font-size: 19px;
+}
+
+.carousel-inner {
+  height: 500px;
+}
+
+.v-servise-block {
+  padding-bottom: 0;
+}
+
+.tab-container {
+  border-bottom: 1px solid #eaedee;
+}
+
+.nav-tab-serv {
+  border-bottom: none;
+  display: table;
+  margin: 0 auto;
+}
+
+.nav-tab-item {
+  float: left;
+}
+
+.nav-item-serv {
+  background: #fff;
+  border-radius: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #8b989b;
+  letter-spacing: 2px;
+  margin-right: 0;
+  border: 1px solid #eaedee;
+  border-bottom: none;
+  display: inline-block;
+  padding: 19px 19px 17px;
+  cursor: pointer;
+  margin-left: -1px;
+  transition: color 0.2s linear, border-color 0.2s linear;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-item-serv {
+    font-size: 12px;
+  }
+}
+.nav-item-serv.active, .nav-item-serv:hover {
+  background: #868686;
+  border-color: #949494;
+  color: #fff;
+  margin-bottom: -1px;
+}
+
+.tab-nav-wrapper {
+  border-bottom: 1px solid #eaedee;
+  margin-bottom: 10px;
+}
+
+.tab-serv-content {
+  min-height: 498px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.tab-serv-text {
+  text-align: center;
+  padding: 80px 15px 0;
+}
+
+.tab-serv-text h3 {
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 0px;
+  text-decoration: underline;
+}
+
+.tab-serv-text p {
+  max-width: 80%;
+  font-size: 14px;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.7;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.tab-info {
+  display: none;
+}
+
+.tab-info.active {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .tab-serv-text {
+    padding-top: 130px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav-item-serv {
+    padding: 12px 12px 10px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .tab-nav-wrapper {
+    margin-bottom: 20px;
+  }
+  .tab-serv-content {
+    min-height: 440px;
+  }
+  .tab-serv-text {
+    padding-top: 100px;
+  }
+  .nav-tab-serv {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tab-nav-wrapper {
+    margin-bottom: 40px;
+  }
+  .tab-serv-content {
+    min-height: 350px;
+  }
+  .tab-serv-text-content {
+    min-height: 100% !important;
+    height: auto !important;
+  }
+  .tab-serv-img {
+    display: none;
+  }
+  .tab-serv-text {
+    padding: 50px 15px;
+  }
+}
+@media screen and (max-width: 481px) {
+  .tab-serv-text {
+    padding: 30px 15px;
+  }
+}
+.footer {
+  background: #494949;
+  padding-top: 65px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-top: 45px;
+  }
+}
+img.footer-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  margin-top: 70px;
+  color: #505050;
+  letter-spacing: 5px;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 13px;
+  font-family: "Titillium Web";
+  color: #646464;
+  max-width: 550px;
+  margin: 27px auto 45px;
+  line-height: 22px;
+  letter-spacing: 0;
+}
+
+.soc-net {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.social-network {
+  display: inline-block;
+  margin-bottom: 38px;
+  width: 23%;
+  height: 15px;
+  text-align: center;
+}
+
+.social-network img {
+  transition: all 700ms ease-out;
+  -ms-transition: all 700ms ease-out;
+}
+
+.ftr-social {
+  display: table;
+  margin: 50px auto 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .social-network {
+    width: 15%;
+  }
+  .ftr-social {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+.ftr-social .social-network {
+  opacity: 1;
+  text-align: center;
+  width: 27px;
+  height: 27px;
+  border: 2px solid #646464;
+  margin: 0 25px;
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .ftr-social .social-network {
+    margin: 0 15px;
+  }
+}
+.ftr-social .social-network {
+  line-height: 27px;
+}
+
+.ftr-social .social-network i {
+  color: #646464;
+}
+
+.ftr-social .social-network:hover i {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .footer h3, .s-footer {
+    margin-top: 20px;
+  }
+  .footer p {
+    margin-top: 15px;
+  }
+}
+.ftr-nav-container {
+  background: #777777;
+  padding: 28px 0 22px;
+}
+
+@media screen and (max-width: 992px) {
+  .ftr-nav-container {
+    display: none;
+  }
+}
+.footer-info {
+  color: #000000;
+}

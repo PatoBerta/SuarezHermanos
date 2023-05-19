@@ -1,0 +1,121 @@
+.footer {
+    background: #494949;
+    padding-top: 65px;
+  }
+  @media screen and (max-width: 768px) {
+    .footer {
+      padding-top: 45px;
+    }
+  }
+  
+  img.footer-logo {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .footer h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    margin-top: 70px;
+    color: #505050;
+    letter-spacing: 5px;
+  }
+  
+  .footer p {
+      text-align: center;
+      font-size: 13px;
+      font-family: "Titillium Web";
+      color: #646464;
+      max-width: 550px;
+      margin: 27px auto 45px;
+      line-height: 22px;
+      letter-spacing: 0;
+  }
+  
+  .soc-net {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .social-network {
+    display: inline-block;
+    margin-bottom: 38px;
+    width: 23%;
+    height: 15px;
+    text-align: center;
+  }
+  
+  .social-network img{
+    transition: all 700ms ease-out;
+    -ms-transition: all 700ms ease-out;  
+  }
+  
+  .ftr-social {
+    display: table;
+    margin: 50px auto 50px;
+  }
+  @media screen and (max-width: 768px) {
+    .social-network {
+      width: 15%;
+    }  
+    .ftr-social {
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+  }
+  
+  .ftr-social .social-network {
+    opacity: 1;
+    text-align: center;
+    width: 27px;
+    height: 27px;
+    border: 2px solid #646464;
+    margin: 0 25px;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .ftr-social .social-network {
+      margin: 0 15px;
+    }
+  }
+  .ftr-social .social-network {
+    line-height: 27px;
+  }
+  .ftr-social .social-network i {
+    color: #646464;
+  }
+  
+  .ftr-social .social-network:hover i {
+    color: #fff;
+  }
+  
+  @media (max-width: 991px) {
+    .footer h3, .s-footer {
+      margin-top: 20px;
+    }
+  
+    .footer p {
+      margin-top: 15px;
+    }
+  }
+  .ftr-nav-container {
+    background: #777777;
+    padding: 28px 0 22px;
+  }
+  @media screen and (max-width: 992px) {
+    .ftr-nav-container {
+      display: none;
+    }
+  }
+  
+  
+  
+  .footer-info {
+    color: #000000;
+  }
+
+

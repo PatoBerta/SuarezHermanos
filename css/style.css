@@ -1,17 +1,13 @@
-.navbar-nav{
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 500;
-}
+*::before, ::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
 
-.navbar-light .navbar-brand{
-    
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
+/*index*/
 
-}
+
+
 
 
 .container{
@@ -102,8 +98,17 @@ li a.active, li a:hover{
   
 }
 
+.nv{
+  text-align: center;
+  text-decoration: underline;
+}
 
+.nv-txt{
+  font-size: 17px;
+}
 /*nosotros*/
+
+
 
 .nos{
   background-position: center;
@@ -117,12 +122,14 @@ li a.active, li a:hover{
 }
 .contenedor{
   display: flex;
+  text-align: center;
+
   
 }
 
 .txt{
   font-size: 13px;
-  
+  letter-spacing: 2px;
   
 
 }
@@ -133,56 +140,586 @@ li a.active, li a:hover{
 
 .sub{
   text-align: center;
+  text-decoration: underline;
 }
 
 
 .list {
-  font-size: 16px;
+  font-size: 19px;
   text-decoration: underline;
+  
     
 }
 
 .sublist{
   text-decoration: underline;
+  font-size: 19px;
 }
+
+
+
+
+.v-about-block {
+  background: #929292;
+  border-bottom: 1px solid #eaedee;
+}
+
+.block-style {
+  padding: 133px 0 126px;
+}
+
+.about-title {
+	margin-top: 25px;
+	font-weight: bolder;
+	text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .about-title {
+	margin: 0 0 30px;
+	font-family: "Titillium Web";
+	letter-spacing: 5px;
+  }
+
+  .block-style {
+    padding: 80px 0;
+  }
+}
+.about-text {
+  font-size: 16px;
+  color: #8b989b;
+  line-height: 1.7;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .about-text {
+    margin: 0 0 30px;
+  }
+
+  .v-about-block {
+    padding-bottom: 50px;
+  }
+}
+  
+
+
 
 
 
 /*Tramites*/
 
-
-.btn{
-    display: inline-block;
-    margin-top: 7px;
-    padding: 5px 5px;
-    border: 2px solid rgb(92, 92, 92);
-    color: white;
-    text-decoration: none;
-    background: rgb(70, 70, 70);
+.carousel-inner{
+  height: 500px;
 }
 
-.box-container{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.v-servise-block {
+  padding-bottom: 0;
+}
+
+.tab-container {
+  border-bottom: 1px solid #eaedee;
+}
+
+.nav-tab-serv {
+  border-bottom: none;
+  display: table;
+  margin: 0 auto;
+}
+
+.nav-tab-item {
+  float: left;
+}
+
+.nav-item-serv {
+  background: #fff;
+  border-radius: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #8b989b;
+  letter-spacing: 2px;
+  margin-right: 0;
+  border: 1px solid #eaedee;
+  border-bottom: none;
+  display: inline-block;
+  padding: 19px 19px 17px;
+  cursor: pointer;
+  margin-left: -1px;
+  transition: color 0.2s linear, border-color 0.2s linear;
+}
+@media screen and (max-width: 1200px) {
+  .nav-item-serv {
+    font-size: 12px;
+  }
+}
+
+.nav-item-serv.active, .nav-item-serv:hover {
+  background: #868686;
+  border-color: #949494;
+  color: #fff;
+  margin-bottom: -1px;
+}
+
+.tab-nav-wrapper {
+  border-bottom: 1px solid #eaedee;
+  margin-bottom: 10px;
+}
+
+.tab-serv-content {
+  min-height: 498px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+
+
+.tab-serv-text {
+  text-align: center;
+  padding: 80px  15px 0;
+}
+
+.tab-serv-text h3 {
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 0px;
+  text-decoration: underline;
+}
+
+.tab-serv-text p {
+  max-width: 80%;
+  font-size: 14px;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.7;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 0;
   text-align: center;
 }
 
-.box-container .box{
-  height: 11rem;
-  width: 17rem;
-  text-align: center;
-  border-radius: 1rem;
-  margin: 2rem;
-  background: #3f3f3f;
+.tab-info {
+  display: none;
+}
+
+.tab-info.active {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .tab-serv-text {
+    padding-top: 130px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav-item-serv {
+    padding: 12px 12px 10px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .tab-nav-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .tab-serv-content {
+    min-height: 440px;
+  }
+
+  .tab-serv-text {
+    padding-top: 100px;
+  }
+
+  .nav-tab-serv {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tab-nav-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .tab-serv-content {
+    min-height: 350px;
+  }
+
+  .tab-serv-text-content {
+    min-height: 100% !important;
+    height: auto !important;
+  }
+
+  .tab-serv-img {
+    display: none;
+  }
+
+  .tab-serv-text {
+    padding: 50px 15px;
+    
+  }
+}
+@media screen and (max-width: 481px) {
+  .tab-serv-text {
+    padding: 30px 15px;
+  }
+}
+
+
+
+/*Contacto*/
+
+.a-contact-section {
+  padding-top: 140px;
+}
+@media screen and (max-width: 992px) {
+  .a-contact-section {
+    padding-top: 70px;
+  }
+}
+
+.contact-us {
+  padding-bottom: 90px;
+}
+@media screen and (max-width: 768px) {
+  .contact-us {
+    padding-bottom: 30px;
+  }
+}
+
+.contact-us p {
+  color: #acafba;
+}
+
+.contact-info h5 {
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  color: #333;
+}
+
+.contact-info h5:first-child {
+  margin-top: 0;
+}
+
+.contact-info p {
+  line-height: 24px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.phone {
+  line-height: 24px;
+  text-align: left;
+  margin-top: 0;
+  text-decoration: none;
+  color: #acafba;
+  transition: color 0.3s linear;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 0;
+}
+
+.input-style {
+  background: #eeeef0;
+  padding: 16px 19px;
+  color: #000000;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 13px;
+  display: inline-block;
+  border: none;
+  margin-bottom: 30px;
+  border: 1px solid transparent;
+}
+
+.mail-us {
+  color: #acafba;
+  transition: color 0.3s linear;
+}
+
+.contact-us input[type=text] {
+  width: 47%;
+  margin-right: 6%;
+  float: left;
+}
+
+.contact-us input[type=email] {
+  width: 47%;
+  float: left;
+}
+
+.contact-us input[type=tel] {
+  width: 47%;
+  float: left;
+}
+
+.tx-style {
+  width: 100%;
+  height: 150px;
+  background: #eeeef0;
+  padding: 16px 19px;
+  color: #000000;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 13px;
+  margin-bottom: 40px;
+  border: none;
+  resize: none;
+}
+
+.contact-us input.send {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #35373e;
+  display: block;
+  margin: 0 auto;
+  opacity: 1;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: 'Titillium Web', sans-serif, Arial;
+  padding: 0 35px 0 0;
+  background-position: 90% 1px !important;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.contact-us input.send:hover {
+  background-position: 100% 1px !important;
+}
+
+.send:hover {
+  opacity: 1;
+}
+
+.send:after {
   
+  margin-left: 8px;
+  opacity: 0.7;
 }
 
-.box-container .box i {
-  height: 3rem;
-  width: 3rem;
-  line-height: 3rem;
+.send:hover:after {
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .contact-us h2 {
+    margin-top: 40px;
+  }
+
+  .contact-us p {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .contact-info h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .contact-info p {
+    margin-top: 0;
+  }
+
+  .contact-us input {
+    margin-bottom: 10px;
+  }
+
+  .contact-us textarea {
+    margin-bottom: 40px;
+  }
+
+  .contact-us input[type=text] {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .contact-us input[type=email] {
+    width: 100%;
+  }
+
+  .contact-us input[type=tel] {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .contact-us h2 {
+    margin-top: 40px;
+  }
+
+  .contact-us p {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .contact-info h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .contact-info p {
+    margin-top: 0;
+  }
+
+  .contact-us input {
+    margin-bottom: 10px;
+  }
+
+  .contact-us textarea {
+    margin-bottom: 20px;
+    height: 100px;
+  }
+
+  .contact-us input[type=text] {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .contact-us input[type=email] {
+    width: 100%;
+  }
+
+  .contact-us input[type=tel] {
+    width: 100%;
+  }
+}
+
+
+/*FOOTER*/
+
+.footer {
+  background: #494949;
+  padding-top: 65px;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-top: 45px;
+  }
+}
+
+img.footer-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer h3 {
+  text-transform: uppercase;
   text-align: center;
-  border-radius: 50%;
-  color: whitesmoke;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  margin-top: 70px;
+  color: #505050;
+  letter-spacing: 5px;
+}
+
+.footer p {
+	text-align: center;
+	font-size: 13px;
+	font-family: "Titillium Web";
+	color: #646464;
+	max-width: 550px;
+	margin: 27px auto 45px;
+	line-height: 22px;
+	letter-spacing: 0;
+}
+
+.soc-net {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.social-network {
+  display: inline-block;
+  margin-bottom: 38px;
+  width: 23%;
+  height: 15px;
+  text-align: center;
+}
+
+.social-network img{
+  transition: all 700ms ease-out;
+  -ms-transition: all 700ms ease-out;  
+}
+
+.ftr-social {
+  display: table;
+  margin: 50px auto 50px;
+}
+@media screen and (max-width: 768px) {
+  .social-network {
+    width: 15%;
+  }  
+  .ftr-social {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+.ftr-social .social-network {
+  opacity: 1;
+  text-align: center;
+  width: 27px;
+  height: 27px;
+  border: 2px solid #646464;
+  margin: 0 25px;
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .ftr-social .social-network {
+    margin: 0 15px;
+  }
+}
+.ftr-social .social-network {
+  line-height: 27px;
+}
+.ftr-social .social-network i {
+  color: #646464;
+}
+
+.ftr-social .social-network:hover i {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .footer h3, .s-footer {
+    margin-top: 20px;
+  }
+
+  .footer p {
+    margin-top: 15px;
+  }
+}
+.ftr-nav-container {
+  background: #777777;
+  padding: 28px 0 22px;
+}
+@media screen and (max-width: 992px) {
+  .ftr-nav-container {
+    display: none;
+  }
+}
+
+
+
+.footer-info {
+  color: #000000;
+}
+
+
+/*login*/
+
+.lg-back{
+  background: rgb(124, 124, 124)
+}
+
+.login-container{
+  margin-top: 100px;
+}
+
+.h2-shop{
+  text-align: center;
+  text-decoration: underline;
 }
